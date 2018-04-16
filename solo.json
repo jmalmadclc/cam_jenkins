@@ -1,1 +1,1 @@
-{ "run_list": ["recipe[nginx]", "recipe[lamp]", "recipe[build-essential]"] }
+{ "run_list": ["recipe[lamp]", "recipe[nginx]", "recipe[build-essential]"] }
