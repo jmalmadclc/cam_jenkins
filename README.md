@@ -1,15 +1,38 @@
-# Rollbar Demo Rails App
+# node-js-sample
 
-A demo app to show off Rollbar, the error tracking service. In the wild at [rollbar-rails-demo.herokuapp.com](http://rollbar-rails-demo.herokuapp.com/).
+A barebones Node.js app using [Express 4](http://expressjs.com/).
 
-Errors in this app are tracked and reported to [this demo project in Rollbar](https://rollbar.com/demo). Click around in the app and see what shows up in the Rollbar project.
+## Running Locally
 
-## Credits
+Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
-We used the excellent [rails3-bootstrap-device-cancan](https://github.com/railsapps/rails3-bootstrap-devise-cancan) tutorial by [Daniel Kehoe](https://github.com/DanielKehoe) as a template.
+```sh
+git clone git@github.com:heroku/node-js-sample.git # or clone your own fork
+cd node-js-sample
+npm install
+npm start
+```
 
-## License
+Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-MIT License
+## Deploying to Heroku
 
-http://www.opensource.org/licenses/mit-license
+```
+heroku create
+git push heroku master
+heroku open
+```
+
+Alternatively, you can deploy your own copy of the app using the web-based flow:
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## Documentation
+
+For more information about using Node.js on Heroku, see these Dev Center articles:
+
+- [10 Habits of a Happy Node Hacker](https://blog.heroku.com/archives/2014/3/11/node-habits)
+- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
